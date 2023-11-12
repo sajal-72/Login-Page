@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-size: 1rem;
+  font-family: "DM Serif Display", serif;
+}
+
+body {
+  color: black;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.login {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.login_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.login_form {
+  position: relative;
+  background-color: rgba(26, 26, 26, 0.1);
+  border: 2px solid white;
+  margin-inline: 1.5rem;
+  padding: 2.5rem 1.5rem;
+  border-radius: 1rem;
+  /* backdrop-filter: blur(3px); */
+}
+
+.login_title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.login_content,
+.login_box {
+  display: grid;
+}
+
+.login_content {
+  row-gap: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.login_box {
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 0.75rem;
+  border-bottom: 2px solid white;
+}
+
+.login_icon,
+.login_eye {
+  font-size: 1.25rem;
+}
+
+.login_input {
+  width: 100%;
+  padding-block: 0.8rem;
+  background: none;
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.login_box-input {
+  position: relative;
+}
+
+.login_label {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  font-weight: 700;
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.login_eye {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.login_box:nth-child(2) input {
+  padding-right: 1.8rem;
+}
+
+.login_check,
+.login_check-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login_check {
+  margin-bottom: 1.5rem;
+}
+
+.login_check-label,
+.login_forgot,
+.login_register {
+  font-size: 0.813rem;
+  font-weight: 700;
+}
+
+.login_check-group {
+  column-gap: 0.5rem;
+}
+
+.login_check-input {
+  width: 16px;
+  height: 16px;
+}
+
+.login_forgot {
+  color: black;
+  font-weight: 700;
+}
+
+.login_forgot:hover {
+  text-decoration: underline;
+}
+
+.login_button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 1.3rem;
+}
+
+.login_title-1 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.3rem;
+  color: white;
+}
+
+.login_google {
+  display: inline-block;
+  width: 123px;
+  padding: 1rem;
+  border: solid;
+  padding-left: 10px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+}
+.login_x {
+  display: inline-block;
+  width: 123px;
+  padding: 1rem;
+  border: solid;
+  padding-left: 10px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+}
+
+.login_linkedin {
+  display: inline-block;
+  width: 123px;
+  padding: 1rem;
+  border: solid;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+}
+
+#login_g {
+  font-size: 1.25rem;
+  color: #4285f4;
+}
+
+#login_x {
+  font-size: 1.25rem;
+  color: black;
+}
+
+#login_ld {
+  font-size: 1.25rem;
+  color: #0077b5;
+}
+
+.login_register {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+.login_register a {
+  color: white;
+  font-weight: 500;
+}
+
+.login_register a:hover {
+  text-decoration: underline;
+}
+
+.login_input:focus + .login_label {
+  top: -12px;
+  font-size: 0.813rem;
+}
+
+.login_input:not(:placeholder-shown).login_input:not(:focus) + .login_label {
+  top: -12px;
+  font-size: 0.813rem;
+}
+
+@media screen and (min-width: 576px) {
+  .login {
+    justify-content: center;
+  }
+
+  .login_form {
+    width: 477px;
+    padding: 4rem 3rem 3.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .login_title {
+    font-size: 2rem;
+  }
+}

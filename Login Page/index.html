@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="login">
+      <img src="a.jpg" alt="lpi" class="login_img" />
+
+      <form action="" class="login_form">
+        <h1 class="login_title">Login</h1>
+
+        <div class="login_content">
+          <div class="login_box">
+            <i class="ri-user-3-line login_icon"></i>
+
+            <div class="login_box-input">
+              <input
+                type="email"
+                required
+                class="login_input"
+                placeholder=" "
+              />
+              <label for="" class="login_label">Email</label>
+            </div>
+          </div>
+
+          <div class="login_box">
+            <i class="ri-lock-2-line login_icon"></i>
+
+            <div class="login_box-input">
+              <input
+                type="password"
+                required
+                class="login_input"
+                id="login-pass"
+                placeholder=" "
+              />
+              <label for="" class="login_label">Password</label>
+              <i class="ri-eye-off-line login_eye" id="login-eye"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="login_check">
+          <div class="login_check-group">
+            <input type="checkbox" class="login_check-input" />
+            <label for="" class="login_check-label">Remember Me</label>
+          </div>
+
+          <a href="#" class="login_forgot">Forgot Password?</a>
+        </div>
+
+        <button class="login_button">Login</button>
+
+        <h3 class="login_title-1">Or</h3>
+
+        <div class="login_google">
+          <i class="ri-google-fill" id="login_g"></i>Google
+        </div>
+        <div class="login_x">
+          <i class="ri-twitter-x-fill" id="login_x"></i>Twitter
+        </div>
+        <div class="login_linkedin">
+          <i class="ri-linkedin-fill" id="login_ld"></i>Linkedin
+        </div>
+        <br />
+        <br />
+        <br />
+        <p class="login_register">
+          Don't have an account? <a href="#">Register</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
